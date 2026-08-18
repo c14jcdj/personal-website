@@ -49,18 +49,12 @@ export const profile: Profile = {
 
 export const projects: Project[] = [
   {
-    title: 'Creator Gifting Platform',
-    context: 'Collective Voice',
-    tags: ['Angular', 'TypeScript'],
+    title: 'Migration Health Command Center',
+    context: 'Personal project',
+    tags: ['React', 'Recharts', 'Data viz'],
     description:
-      'A gifting platform for retailers that opened up new creator-brand partnership workflows, from outreach to fulfillment.',
-  },
-  {
-    title: 'Design System & Storybook Library',
-    context: 'Collective Voice',
-    tags: ['Storybook', 'Angular'],
-    description:
-      'An interactive component library and documentation site that scaled the design system org-wide and sped up developer adoption.',
+      'An early-warning dashboard that protects revenue during a platform migration — same-weekday baselines, root-cause diagnosis across seven signals, and a dollar-ranked at-risk queue.',
+    href: 'https://migration-health-command-center.vercel.app',
   },
   {
     title: 'Shop The Theme',
@@ -69,6 +63,13 @@ export const projects: Project[] = [
     description:
       'A party-kit builder that turns a theme and budget into a curated, one-click Amazon shopping list for busy parents.',
     href: 'https://shopthetheme.com',
+  },
+  {
+    title: 'Porch Light',
+    context: 'Personal project — in development',
+    tags: ['Next.js', 'Drizzle', 'Postgres', 'MapLibre'],
+    description:
+      'A community sponsorship marketplace connecting local organizations and businesses so kids, teams, and hometown programs can thrive.',
   },
 ]
 
