@@ -36,14 +36,32 @@ export default function Hero() {
         </div>
       </div>
       <div className="relative mt-8 md:absolute md:inset-y-0 md:right-0 md:mt-0 md:w-[44%]">
-        <div
+        <svg
           aria-hidden
-          className="absolute left-[6%] right-[2%] top-[4%] bottom-[6%] rotate-[-6deg] bg-[#d7e0eb] [border-radius:58%_42%_55%_45%/52%_58%_42%_48%]"
-        />
-        <div
-          aria-hidden
-          className="absolute -right-[14%] bottom-[8%] top-[38%] w-[45%] rotate-[14deg] bg-[#dcd4c2] [border-radius:52%_48%_44%_56%/60%_46%_54%_40%]"
-        />
+          viewBox="0 0 640 900"
+          preserveAspectRatio="none"
+          className="absolute inset-0 h-full w-full"
+        >
+          <path
+            fill="#d7e0eb"
+            d="M 430 -40
+               C 290 -60, 160 40, 150 170
+               C 143 260, 215 330, 180 415
+               C 148 495, 75 530, 105 625
+               C 140 735, 255 815, 400 820
+               C 540 825, 645 745, 640 620
+               L 640 120
+               C 640 10, 550 -25, 430 -40 Z"
+          />
+          <path
+            fill="#dcd4c2"
+            d="M 640 360
+               C 545 385, 505 465, 540 550
+               C 572 628, 515 695, 555 775
+               C 585 835, 640 855, 640 855
+               L 640 360 Z"
+          />
+        </svg>
         <Image
           src={profile.headshot}
           alt={`Portrait of ${profile.name}`}
