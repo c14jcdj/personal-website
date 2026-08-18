@@ -4,7 +4,7 @@ import { profile } from '../data/content'
 export default function Hero() {
   return (
     <section id="top" className="relative overflow-hidden">
-      <div className="mx-auto max-w-6xl px-6 md:min-h-[560px]">
+      <div className="mx-auto max-w-6xl px-6 md:min-h-[660px]">
         <div className="max-w-xl pt-10 md:py-24">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-muted">
             {profile.eyebrow.split('|')[0].trim()}
@@ -35,7 +35,7 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      <div className="relative mt-8 md:absolute md:inset-y-0 md:right-0 md:mt-0 md:w-[44%]">
+      <div className="relative mt-8 md:absolute md:inset-y-0 md:right-0 md:mt-0 md:w-[48%]">
         <svg
           aria-hidden
           viewBox="0 0 640 900"
@@ -44,22 +44,22 @@ export default function Hero() {
         >
           <path
             fill="#d7e0eb"
-            d="M 430 -40
-               C 290 -60, 160 40, 150 170
-               C 143 260, 215 330, 180 415
-               C 148 495, 75 530, 105 625
-               C 140 735, 255 815, 400 820
-               C 540 825, 645 745, 640 620
-               L 640 120
-               C 640 10, 550 -25, 430 -40 Z"
+            d="M 380 -60
+               C 220 -70, 90 30, 70 170
+               C 52 300, 130 370, 100 480
+               C 72 580, 20 640, 60 740
+               C 105 850, 260 905, 420 900
+               L 640 895
+               L 640 60
+               C 640 -30, 520 -50, 380 -60 Z"
           />
           <path
             fill="#dcd4c2"
-            d="M 640 360
-               C 545 385, 505 465, 540 550
-               C 572 628, 515 695, 555 775
-               C 585 835, 640 855, 640 855
-               L 640 360 Z"
+            d="M 640 240
+               C 555 260, 500 350, 535 450
+               C 568 545, 505 640, 550 745
+               C 585 830, 640 900, 640 900
+               L 640 240 Z"
           />
         </svg>
         <Image
@@ -68,7 +68,7 @@ export default function Hero() {
           width={1100}
           height={1100}
           priority
-          className="relative h-[440px] w-full object-cover object-top md:h-full [mask-image:linear-gradient(to_top,transparent_0%,black_12%)]"
+          className="relative h-[440px] w-full object-cover object-top md:h-full [mask-image:linear-gradient(to_top,transparent_0%,black_4%)]"
         />
       </div>
     </section>
