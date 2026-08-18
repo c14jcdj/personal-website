@@ -35,14 +35,18 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      <div className="mt-8 md:absolute md:inset-y-0 md:right-0 md:mt-0 md:w-[44%]">
+      <div className="relative mt-8 md:absolute md:inset-y-0 md:right-0 md:mt-0 md:w-[44%]">
+        <div
+          aria-hidden
+          className="absolute inset-x-0 bottom-0 top-6 bg-[radial-gradient(ellipse_55%_60%_at_50%_45%,#efe3d3_0%,transparent_75%)]"
+        />
         <Image
           src={profile.headshot}
           alt={`Portrait of ${profile.name}`}
           width={1100}
           height={1100}
           priority
-          className="h-[440px] w-full object-cover object-top md:h-full [mask-image:linear-gradient(to_left,black_78%,transparent),linear-gradient(to_top,black_88%,transparent)] [mask-composite:intersect] [-webkit-mask-composite:source-in]"
+          className="relative h-[440px] w-full object-cover object-top md:h-full [mask-image:linear-gradient(to_top,transparent_0%,black_12%)]"
         />
       </div>
     </section>

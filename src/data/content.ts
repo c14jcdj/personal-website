@@ -45,7 +45,7 @@ export const profile: Profile = {
   linkedin: 'https://linkedin.com/in/chermainez',
   github: 'https://github.com/c14jcdj',
   resumeHref: '/resume.pdf',
-  headshot: '/headshot.png',
+  headshot: '/headshot-cutout.png',
 }
 
 export const projects: Project[] = [
