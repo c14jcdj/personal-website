@@ -2,7 +2,7 @@ import { about, experience, profile } from '../data/content'
 
 export default function About() {
   return (
-    <section id="about" className="border-t border-sand bg-white/60">
+    <section id="about" className="border-t border-sand">
       <div className="mx-auto max-w-6xl px-6 py-20">
         <h2 className="font-display text-4xl">{about.heading}</h2>
         <p className="mt-6 max-w-2xl leading-relaxed text-muted">{about.bio}</p>

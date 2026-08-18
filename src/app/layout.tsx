@@ -12,7 +12,13 @@ const sans = Inter({
   subsets: ["latin"],
 });
 
+const productionUrl =
+  process.env.VERCEL_PROJECT_PRODUCTION_URL ?? process.env.VERCEL_URL;
+
 export const metadata: Metadata = {
+  metadataBase: productionUrl
+    ? new URL(`https://${productionUrl}`)
+    : new URL("http://localhost:3000"),
   title: "Chermaine Zimmerman — Senior Frontend Engineer",
   description:
     "Senior frontend engineer and tech lead with 11 years of experience building thoughtful, scalable web experiences with Angular and React.",
