@@ -1,24 +1,22 @@
+import Image from 'next/image'
 import { projects } from '../data/content'
-
-const cardGradients = [
-  'from-[#1c2333] to-[#8b1e3f]',
-  'from-[#8b1e3f] to-[#e9a23b]',
-  'from-[#3bb2d0] to-[#1c2333]',
-]
 
 export default function SelectedWork() {
   return (
     <section id="work" className="mx-auto max-w-6xl px-6 py-20">
       <h2 className="font-display text-4xl">Selected Work</h2>
       <div className="mt-8 grid gap-6 md:grid-cols-3">
-        {projects.map((project, i) => (
+        {projects.map((project) => (
           <article
             key={project.title}
             className="flex flex-col overflow-hidden rounded-2xl border border-sand bg-white shadow-sm"
           >
-            <div
-              aria-hidden
-              className={`h-36 bg-gradient-to-br ${cardGradients[i % cardGradients.length]}`}
+            <Image
+              src={project.image}
+              alt={`Screenshot of ${project.title}`}
+              width={720}
+              height={432}
+              className="h-40 w-full border-b border-sand object-cover object-top"
             />
             <div className="flex flex-1 flex-col gap-3 p-6">
               <p className="text-xs font-semibold uppercase tracking-wide text-muted">

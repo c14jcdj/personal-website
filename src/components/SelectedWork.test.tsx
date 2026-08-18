@@ -9,6 +9,11 @@ describe('SelectedWork', () => {
     for (const p of projects) expect(screen.getByText(p.title)).toBeInTheDocument()
   })
 
+  it('shows a screenshot per project', () => {
+    render(<SelectedWork />)
+    expect(screen.getAllByRole('img')).toHaveLength(projects.length)
+  })
+
   it('links out only for projects with an href', () => {
     render(<SelectedWork />)
     const links = screen.getAllByRole('link', { name: /view project/i })

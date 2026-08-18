@@ -17,6 +17,7 @@ export type Project = {
   context: string
   tags: string[]
   description: string
+  image: string
   href?: string
 }
 
@@ -54,6 +55,7 @@ export const projects: Project[] = [
     tags: ['React', 'Recharts', 'Data viz'],
     description:
       'An early-warning dashboard that protects revenue during a platform migration — same-weekday baselines, root-cause diagnosis across seven signals, and a dollar-ranked at-risk queue.',
+    image: '/projects/migration-health.jpeg',
     href: 'https://migration-health-command-center.vercel.app',
   },
   {
@@ -62,6 +64,7 @@ export const projects: Project[] = [
     tags: ['Next.js', 'React', 'Tailwind'],
     description:
       'A party-kit builder that turns a theme and budget into a curated, one-click Amazon shopping list for busy parents.',
+    image: '/projects/shopthetheme.jpeg',
     href: 'https://shopthetheme.com',
   },
   {
@@ -70,6 +73,7 @@ export const projects: Project[] = [
     tags: ['Next.js', 'Drizzle', 'Postgres', 'MapLibre'],
     description:
       'A community sponsorship marketplace connecting local organizations and businesses so kids, teams, and hometown programs can thrive.',
+    image: '/projects/porch-light.jpeg',
   },
 ]
 
