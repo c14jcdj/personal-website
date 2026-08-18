@@ -22,7 +22,7 @@ export default function Nav() {
             <li key={l.href}>
               <a
                 href={l.href}
-                className="border-b-2 border-transparent pb-1 text-ink transition-colors hover:border-burgundy hover:text-burgundy focus-visible:outline-2 focus-visible:outline-burgundy"
+                className="border-b-2 border-transparent pb-1 text-ink transition-colors hover:border-accent hover:text-accent focus-visible:outline-2 focus-visible:outline-accent"
               >
                 {l.label}
               </a>

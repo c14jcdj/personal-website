@@ -30,7 +30,7 @@ function StatIcon({ icon }: { icon: Stat['icon'] }) {
       viewBox="0 0 24 24"
       fill="none"
       strokeWidth={1.5}
-      className="h-8 w-8 stroke-burgundy"
+      className="h-8 w-8 stroke-accent"
     >
       {paths[icon]}
     </svg>

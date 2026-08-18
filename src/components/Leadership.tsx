@@ -11,7 +11,7 @@ export default function Leadership() {
             key={point}
             className="flex items-start gap-3 rounded-2xl border border-sand bg-white p-5 text-sm leading-relaxed text-muted shadow-sm"
           >
-            <span aria-hidden className="mt-0.5 font-semibold text-burgundy">
+            <span aria-hidden className="mt-0.5 font-semibold text-accent">
               ✓
             </span>
             {point}

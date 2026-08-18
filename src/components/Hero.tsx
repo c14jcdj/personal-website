@@ -8,7 +8,7 @@ export default function Hero() {
         <div className="max-w-xl pt-10 md:py-24">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-muted">
             {profile.eyebrow.split('|')[0].trim()}
-            <span className="mx-2 text-burgundy">|</span>
+            <span className="mx-2 text-accent">|</span>
             {profile.eyebrow.split('|')[1].trim()}
           </p>
           <h1 className="mt-5 font-display text-5xl leading-[1.08] md:text-6xl">
@@ -29,7 +29,7 @@ export default function Hero() {
           </ul>
           <a
             href="#work"
-            className="mt-10 inline-flex items-center gap-2 text-sm font-semibold text-ink transition-colors hover:text-burgundy focus-visible:outline-2 focus-visible:outline-burgundy"
+            className="mt-10 inline-flex items-center gap-2 text-sm font-semibold text-ink transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-accent"
           >
             <span aria-hidden>↓</span> Explore my work
           </a>
@@ -38,7 +38,11 @@ export default function Hero() {
       <div className="relative mt-8 md:absolute md:inset-y-0 md:right-0 md:mt-0 md:w-[44%]">
         <div
           aria-hidden
-          className="absolute inset-x-0 bottom-0 top-6 bg-[radial-gradient(ellipse_55%_60%_at_50%_45%,#efe3d3_0%,transparent_75%)]"
+          className="absolute left-[6%] right-[2%] top-[4%] bottom-[6%] rotate-[-6deg] bg-[#d7e0eb] [border-radius:58%_42%_55%_45%/52%_58%_42%_48%]"
+        />
+        <div
+          aria-hidden
+          className="absolute -right-[14%] bottom-[8%] top-[38%] w-[45%] rotate-[14deg] bg-[#dcd4c2] [border-radius:52%_48%_44%_56%/60%_46%_54%_40%]"
         />
         <Image
           src={profile.headshot}

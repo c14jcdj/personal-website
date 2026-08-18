@@ -11,7 +11,7 @@ export default function About() {
             <div key={entry.company} className="relative">
               <span
                 aria-hidden
-                className="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full bg-burgundy"
+                className="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full bg-accent"
               />
               <h3 className="text-lg font-semibold">{entry.company}</h3>
               <ul className="mt-1 space-y-0.5">
@@ -32,7 +32,7 @@ export default function About() {
         <a
           href={profile.resumeHref}
           download
-          className="mt-12 inline-block rounded-lg bg-burgundy px-5 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-burgundy"
+          className="mt-12 inline-block rounded-lg bg-accent px-5 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
         >
           Download resume
         </a>

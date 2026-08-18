@@ -13,7 +13,7 @@ export default function Contact() {
           <a
             href={`mailto:${profile.email}`}
             aria-label="Email"
-            className="text-burgundy hover:underline focus-visible:outline-2 focus-visible:outline-burgundy"
+            className="text-accent hover:underline focus-visible:outline-2 focus-visible:outline-accent"
           >
             Email
           </a>
@@ -22,7 +22,7 @@ export default function Contact() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="text-burgundy hover:underline focus-visible:outline-2 focus-visible:outline-burgundy"
+            className="text-accent hover:underline focus-visible:outline-2 focus-visible:outline-accent"
           >
             LinkedIn
           </a>
@@ -31,7 +31,7 @@ export default function Contact() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="text-burgundy hover:underline focus-visible:outline-2 focus-visible:outline-burgundy"
+            className="text-accent hover:underline focus-visible:outline-2 focus-visible:outline-accent"
           >
             GitHub
           </a>

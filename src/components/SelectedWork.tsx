@@ -39,7 +39,7 @@ export default function SelectedWork() {
                   href={project.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-auto pt-2 text-sm font-semibold text-burgundy hover:underline focus-visible:outline-2 focus-visible:outline-burgundy"
+                  className="mt-auto pt-2 text-sm font-semibold text-accent hover:underline focus-visible:outline-2 focus-visible:outline-accent"
                 >
                   View project →
                 </a>
