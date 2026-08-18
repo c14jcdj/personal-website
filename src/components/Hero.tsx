@@ -14,6 +14,7 @@ export default function Hero() {
           <h1 className="mt-5 font-display text-5xl leading-[1.08] md:text-6xl">
             {profile.headline}
           </h1>
+          <div aria-hidden className="mt-6 h-[3px] w-16 bg-accent" />
           <p className="mt-6 max-w-md text-lg leading-relaxed text-muted">
             {profile.tagline}
           </p>
@@ -35,7 +36,7 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      <div className="relative mt-8 md:absolute md:inset-y-0 md:right-0 md:mt-0 md:w-[48%]">
+      <div className="relative mt-8 md:absolute md:inset-y-0 md:right-0 md:mt-0 md:w-[48%] md:overflow-hidden">
         <svg
           aria-hidden
           viewBox="0 0 640 900"
@@ -43,7 +44,7 @@ export default function Hero() {
           className="absolute inset-0 h-full w-full"
         >
           <path
-            fill="#d7e0eb"
+            fill="#ecd8c6"
             d="M 380 -60
                C 220 -70, 90 30, 70 170
                C 52 300, 130 370, 100 480
@@ -54,7 +55,7 @@ export default function Hero() {
                C 640 -30, 520 -50, 380 -60 Z"
           />
           <path
-            fill="#dcd4c2"
+            fill="#cdc5a3"
             d="M 640 240
                C 555 260, 500 350, 535 450
                C 568 545, 505 640, 550 745
@@ -68,7 +69,7 @@ export default function Hero() {
           width={1100}
           height={1100}
           priority
-          className="relative h-[440px] w-full object-cover object-top md:h-full [mask-image:linear-gradient(to_top,transparent_0%,black_4%)]"
+          className="relative h-[440px] w-full object-cover object-top md:h-[118%]"
         />
       </div>
     </section>
