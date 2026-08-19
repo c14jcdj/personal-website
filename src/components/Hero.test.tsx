@@ -6,7 +6,7 @@ describe('Hero', () => {
   it('renders headline, tagline, CTAs, and headshot', () => {
     render(<Hero />)
     expect(
-      screen.getByRole('heading', { level: 1, name: /senior frontend engineer & tech lead/i }),
+      screen.getByRole('heading', { level: 1, name: /senior software engineer & tech lead/i }),
     ).toBeInTheDocument()
     expect(
       screen.getByText(/I build thoughtful, scalable web experiences/i),
@@ -18,7 +18,7 @@ describe('Hero', () => {
     expect(screen.getByRole('link', { name: /let’s talk/i })).toHaveAttribute('href', '#contact')
     expect(screen.getByText(/11 years building for the web/i)).toBeInTheDocument()
     expect(
-      screen.getByText(/building with clarity, leading/i),
+      screen.getByText(/currently building at/i),
     ).toBeInTheDocument()
     expect(screen.getByRole('img', { name: /chermaine zimmerman/i })).toBeInTheDocument()
   })

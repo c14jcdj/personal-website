@@ -6,7 +6,7 @@
   --color-accent: #6e2231;
   --color-muted: #5c6072;
   --color-sand: #e9e2d8;
-  --font-display: var(--font-playfair);
+  --font-display: var(--font-display-face);
   --font-sans: var(--font-inter);
   --font-script: var(--font-caveat);
 }

@@ -35,11 +35,11 @@ export type Stat = {
 
 export const profile: Profile = {
   name: 'Chermaine Zimmerman',
-  headline: 'Senior Frontend Engineer & Tech Lead',
+  headline: 'Senior Software Engineer & Tech Lead',
   tagline:
-    'I build thoughtful, scalable web experiences—and help teams do their best work.',
+    'I build thoughtful, scalable web experiences and help teams do their best work.',
   yearsNote: '11 years building for the web',
-  motto: 'Building with clarity, leading with empathy.',
+  motto: 'Currently building at Rakuten Advertising.',
   location: 'San Francisco Bay Area',
   email: 'chermainezimmerman@gmail.com',
   linkedin: 'https://linkedin.com/in/chermainez',

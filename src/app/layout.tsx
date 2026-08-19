@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Inter, Caveat } from "next/font/google";
+import { EB_Garamond, Inter, Caveat } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
-const display = Playfair_Display({
-  variable: "--font-playfair",
+const display = EB_Garamond({
+  variable: "--font-display-face",
   subsets: ["latin"],
 });
 
@@ -25,11 +25,11 @@ export const metadata: Metadata = {
   metadataBase: productionUrl
     ? new URL(`https://${productionUrl}`)
     : new URL("http://localhost:3000"),
-  title: "Chermaine Zimmerman — Senior Frontend Engineer",
+  title: "Chermaine Zimmerman — Senior Software Engineer",
   description:
-    "Senior frontend engineer and tech lead with 11 years of experience building thoughtful, scalable web experiences with Angular and React.",
+    "Senior software engineer and tech lead with 11 years of experience building thoughtful, scalable web experiences with Angular and React.",
   openGraph: {
-    title: "Chermaine Zimmerman — Senior Frontend Engineer",
+    title: "Chermaine Zimmerman — Senior Software Engineer",
     description: "Building thoughtful, scalable web experiences.",
     images: ["/headshot.png"],
   },
