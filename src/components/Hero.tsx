@@ -16,7 +16,7 @@ export default function Hero() {
         width={1681}
         height={936}
         priority
-        className="absolute -right-[115px] bottom-[57px] hidden h-[731px] w-[940px] max-w-none object-fill md:block"
+        className="absolute bottom-[57px] left-[calc(50%-35px)] hidden h-[731px] w-[940px] max-w-none object-fill md:block"
       />
       <div className="relative mx-auto max-w-7xl px-6 md:min-h-[751px]">
         <div className="max-w-2xl pt-12 md:max-w-[min(42rem,54.5%)] md:pt-[173px] md:pb-28">
