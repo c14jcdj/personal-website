@@ -45,22 +45,21 @@ export default function Hero() {
         >
           <path
             fill="#ecd8c6"
-            d="M 380 -60
-               C 220 -70, 90 30, 70 170
-               C 52 300, 130 370, 100 480
-               C 72 580, 20 640, 60 740
-               C 105 850, 260 905, 420 900
-               L 640 895
-               L 640 60
-               C 640 -30, 520 -50, 380 -60 Z"
+            d="M 330 -40
+               C 180 -45, 62 90, 56 240
+               C 51 370, 122 440, 96 560
+               C 78 655, 142 748, 265 764
+               C 405 782, 532 706, 546 574
+               C 558 462, 498 402, 518 288
+               C 537 150, 468 -35, 330 -40 Z"
           />
           <path
             fill="#cdc5a3"
-            d="M 640 240
-               C 555 260, 500 350, 535 450
-               C 568 545, 505 640, 550 745
-               C 585 830, 640 900, 640 900
-               L 640 240 Z"
+            d="M 640 170
+               C 556 195, 516 280, 543 372
+               C 567 455, 508 525, 539 615
+               C 564 690, 640 725, 640 725
+               L 640 170 Z"
           />
         </svg>
         <Image
@@ -69,7 +68,7 @@ export default function Hero() {
           width={1100}
           height={1100}
           priority
-          className="relative h-[440px] w-full object-cover object-top md:h-[118%]"
+          className="relative z-[1] h-[440px] w-full object-cover object-top md:absolute md:bottom-[-24%] md:left-1/2 md:h-auto md:w-[94%] md:-translate-x-1/2"
         />
       </div>
     </section>
