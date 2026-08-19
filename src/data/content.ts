@@ -14,11 +14,12 @@ export type Profile = {
 
 export type Project = {
   title: string
-  context: string
   tags: string[]
   description: string
   image: string
   href?: string
+  cta?: string
+  badge?: string
 }
 
 export type ExperienceEntry = {
@@ -51,17 +52,16 @@ export const profile: Profile = {
 export const projects: Project[] = [
   {
     title: 'Migration Health Command Center',
-    context: 'Personal project',
-    tags: ['React', 'Recharts', 'Data viz'],
+    tags: ['React', 'Recharts', 'Data Visualization'],
     description:
-      'An early-warning dashboard that protects revenue during a platform migration — same-weekday baselines, root-cause diagnosis across seven signals, and a dollar-ranked at-risk queue.',
+      'An early-warning dashboard that protects revenue during a platform migration. It compares same-weekday baselines, diagnoses root causes across seven signals, and ranks at-risk accounts in dollars.',
     image: '/projects/migration-health.jpeg',
     href: 'https://migration-health-command-center.vercel.app',
+    cta: 'View case study',
   },
   {
     title: 'Shop The Theme',
-    context: 'Personal project',
-    tags: ['Next.js', 'React', 'Tailwind'],
+    tags: ['Next.js', 'React', 'Tailwind CSS'],
     description:
       'A party-kit builder that turns a theme and budget into a curated, one-click Amazon shopping list for busy parents.',
     image: '/projects/shopthetheme.jpeg',
@@ -69,13 +69,16 @@ export const projects: Project[] = [
   },
   {
     title: 'Porch Light',
-    context: 'Personal project — in development',
-    tags: ['Next.js', 'Drizzle', 'Postgres', 'MapLibre'],
+    tags: ['Next.js', 'Postgres', 'MapLibre'],
     description:
       'A community sponsorship marketplace connecting local organizations and businesses so kids, teams, and hometown programs can thrive.',
     image: '/projects/porch-light.jpeg',
+    badge: 'In development',
   },
 ]
+
+export const workIntro =
+  'A selection of projects that show my range, from data-heavy dashboards to consumer experiences to community platforms.'
 
 export const experience: ExperienceEntry[] = [
   {
@@ -116,9 +119,33 @@ export const experience: ExperienceEntry[] = [
   },
 ]
 
+export type EducationEntry = {
+  school: string
+  credential: string
+  period: string
+}
+
+export const education: EducationEntry[] = [
+  {
+    school: 'Dev Bootcamp',
+    credential: 'Web Development Program',
+    period: '2014',
+  },
+  {
+    school: 'UC Davis',
+    credential: 'M.S. Forensic Science: Computer Accident Reconstruction',
+    period: '2003 — 2006',
+  },
+  {
+    school: 'UC Davis',
+    credential: 'B.S. Neurobiology and Behavior',
+    period: '1999 — 2003',
+  },
+]
+
 export const leadership = {
   heading: 'Leadership',
-  body: 'Engineering leadership has run through every chapter of my career — from leading migrations and design-system adoption to growing the engineers around me.',
+  body: 'Engineering leadership has run through every chapter of my career, from leading migrations and design-system adoption to growing the engineers around me.',
   points: [
     'Mentored engineers and raised the bar on code quality, performance, and development standards.',
     'Led the AngularJS-to-Angular migration that modernized a high-traffic platform.',
@@ -135,5 +162,5 @@ export const stats: Stat[] = [
 
 export const about = {
   heading: 'About',
-  bio: 'I’m a senior software engineer with 11 years of experience building scalable web applications in the creator economy, affiliate marketing, and social commerce space. I’ve owned end-to-end web experiences that support creator onboarding, growth, and monetization — with deep expertise in Angular and React, a strong focus on performance and architecture, and a design partnership habit that shows up in every product I ship.',
+  bio: 'I’m a senior software engineer with 11 years of experience building scalable web applications in the creator economy, affiliate marketing, and social commerce. I’ve owned web experiences end to end, from creator onboarding to growth and monetization. I work mainly in Angular and React, care deeply about performance and architecture, and partner closely with design on everything I ship.',
 }

@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import { describe, it, expect } from 'vitest'
 import About from './About'
-import { experience } from '../data/content'
+import { education, experience } from '../data/content'
 
 describe('About', () => {
   it('renders every employer and a resume download', () => {
@@ -11,6 +11,13 @@ describe('About', () => {
       'href',
       '/resume.pdf',
     )
+  })
+
+  it('renders education in the timeline', () => {
+    render(<About />)
+    for (const e of education)
+      expect(screen.getByText(e.credential, { exact: false })).toBeInTheDocument()
+    expect(screen.getAllByText('UC Davis')).toHaveLength(2)
   })
 
   it('shows role progression at Collective Voice', () => {

@@ -1,4 +1,4 @@
-import { about, experience, profile } from '../data/content'
+import { about, education, experience, profile } from '../data/content'
 
 export default function About() {
   return (
@@ -26,6 +26,18 @@ export default function About() {
                   <li key={h}>{h}</li>
                 ))}
               </ul>
+            </div>
+          ))}
+          {education.map((entry) => (
+            <div key={entry.school + entry.credential} className="relative">
+              <span
+                aria-hidden
+                className="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full border-2 border-accent bg-cream"
+              />
+              <h3 className="text-lg font-semibold">{entry.school}</h3>
+              <p className="mt-1 text-sm text-muted">
+                {entry.credential} — {entry.period}
+              </p>
             </div>
           ))}
         </div>
