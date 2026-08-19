@@ -1,9 +1,9 @@
 export type Profile = {
   name: string
-  eyebrow: string
   headline: string
   tagline: string
-  chips: string[]
+  yearsNote: string
+  motto: string
   location: string
   email: string
   linkedin: string
@@ -35,11 +35,11 @@ export type Stat = {
 
 export const profile: Profile = {
   name: 'Chermaine Zimmerman',
-  eyebrow: 'Senior Frontend Engineer | Tech Lead',
-  headline: 'Building thoughtful, scalable web experiences',
+  headline: 'Senior Frontend Engineer & Tech Lead',
   tagline:
-    'I design and build modern web applications that solve complex problems and help teams move faster.',
-  chips: ['React', 'Angular', 'AWS', 'Team Leadership'],
+    'I build thoughtful, scalable web experiences—and help teams do their best work.',
+  yearsNote: '11 years building for the web',
+  motto: 'Building with clarity, leading with empathy.',
   location: 'San Francisco Bay Area',
   email: 'chermainezimmerman@gmail.com',
   linkedin: 'https://linkedin.com/in/chermainez',

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Inter } from "next/font/google";
+import { Playfair_Display, Inter, Caveat } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
@@ -10,6 +10,11 @@ const display = Playfair_Display({
 
 const sans = Inter({
   variable: "--font-inter",
+  subsets: ["latin"],
+});
+
+const script = Caveat({
+  variable: "--font-caveat",
   subsets: ["latin"],
 });
 
@@ -34,7 +39,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${display.variable} ${sans.variable} h-full antialiased`}
+      className={`${display.variable} ${sans.variable} ${script.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans">
         {children}

@@ -3,8 +3,11 @@ import { projects } from '../data/content'
 
 export default function SelectedWork() {
   return (
-    <section id="work" className="mx-auto max-w-6xl px-6 py-20">
-      <h2 className="font-display text-4xl">Selected Work</h2>
+    <section id="work" className="mx-auto max-w-7xl px-6 pb-20 md:-mt-[78px]">
+      <div className="flex items-baseline gap-6">
+        <h2 className="shrink-0 font-display text-3xl">Selected Work</h2>
+        <div aria-hidden className="h-px flex-1 translate-y-[-8px] bg-ink/15" />
+      </div>
       <div className="mt-8 grid gap-6 md:grid-cols-3">
         {projects.map((project) => (
           <article

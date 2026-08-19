@@ -3,7 +3,7 @@ import { profile } from '../data/content'
 export default function Contact() {
   return (
     <footer id="contact" className="border-t border-sand">
-      <div className="mx-auto max-w-6xl px-6 py-16 text-center">
+      <div className="mx-auto max-w-7xl px-6 py-16 text-center">
         <h2 className="font-display text-4xl">Let’s talk</h2>
         <p className="mx-auto mt-4 max-w-md text-muted">
           Open to senior frontend roles — remote. The fastest way to reach me is
